@@ -1,6 +1,6 @@
 <h1>ExpNo 4 : Implement A* search algorithm for a Graph</h1> 
-<h3>Name:       </h3>
-<h3>Register Number:           </h3>
+<h3>Name: Abdur Rahman Basil A H       </h3>
+<h3>Register Number: 212223040002          </h3>
 <H3>Aim:</H3>
 <p>To ImplementA * Search algorithm for a Graph using Python 3.</p>
 <H3>Algorithm:</H3>
@@ -52,7 +52,8 @@
 
 <h3>PROGRAM</h3>
 
-``````from collections import defaultdict
+``````
+from collections import defaultdict
 H_dist ={}
 def aStarAlgo(start_node, stop_node):
     open_set = set(start_node)
