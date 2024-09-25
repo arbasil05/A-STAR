@@ -51,14 +51,8 @@
 ``````
 
 <h3>PROGRAM</h3>
-```
-#!/usr/bin/env python
-# coding: utf-8
 
-# In[ ]:
-
-
-from collections import defaultdict
+``````from collections import defaultdict
 H_dist ={}
 def aStarAlgo(start_node, stop_node):
     open_set = set(start_node)
@@ -124,7 +118,7 @@ def aStarAlgo(start_node, stop_node):
 #define fuction to return neighbor and its distance
 #from the passed node
 def get_neighbors(v):
-       """
+     
     Retrieves a value from the Graph_nodes dictionary based on the provided key.
 
     Parameters:
@@ -135,13 +129,13 @@ def get_neighbors(v):
     The value associated with the key `v` in the Graph_nodes dictionary if the key exists; 
     otherwise, returns None.
     TYPE THE CODE HERE BY REFERRING TO THE ABOVE DESCRIPTION
-    """
+ 
 def heuristic(n):
     return H_dist[n]
 
 
 #Describe your graph here
-'''Graph_nodes = {
+Graph_nodes = {
     'A': [('B', 6), ('F', 3)],
     'B': [('A', 6), ('C', 3), ('D', 2)],
     'C': [('B', 3), ('D', 1), ('E', 5)],
@@ -152,7 +146,7 @@ def heuristic(n):
     'H': [('F', 7), ('I', 2)],
     'I': [('E', 5), ('G', 3), ('H', 2), ('J', 3)],
 }
-'''
+
 graph = defaultdict(list)
 n,e = map(int,input().split())
 for i in range(e):
@@ -170,7 +164,8 @@ print(H_dist)
 Graph_nodes=graph
 print(graph)
 aStarAlgo('S', 'G')
-```
+``````
+
 
 <hr>
 <h2>Sample Graph I</h2>
